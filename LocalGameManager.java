@@ -1,13 +1,13 @@
 
 public class LocalGameManager {
 
-	public LocalGameManager(){
+	public LocalGameManager(int players){
 		
 		Grid grid = new Grid("TRON - Local Game");
 		LineManager lineManager = LineManager.getInstance();
 		boolean loop = true;
 		boolean[] lost;
-		int players = 2;
+		//int players = 4;
 		lineManager.setNumPlayers(players);
 		lineManager.reset(players);
 		
@@ -77,6 +77,7 @@ public class LocalGameManager {
 			}
 			lineManager.reset(players);
 			grid.reset();
+			lineManager.moveLines();
 			System.out.println("drawing");
 			grid.drawLines();
 			loop=true;

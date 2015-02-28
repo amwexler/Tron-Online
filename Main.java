@@ -9,8 +9,8 @@ public class Main{
 	public static void main(String[] args)  {
 		//JFrame jf = new JFrame();
 		//jf.setVisible(true);
-		LocalGameManager lgm = new LocalGameManager();
-		//MenuGUI m = new MenuGUI("TRON - MAIN MENU");
+		//LocalGameManager lgm = new LocalGameManager();
+		MenuGUI m = new MenuGUI("TRON - MAIN MENU");
 		
 		/*
 		Grid grid = new Grid("TRON - Host");

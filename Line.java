@@ -41,6 +41,7 @@ public class Line implements Serializable{
 	
 	public boolean takeStep(){//true if step is successful, false otherwise
 		//System.out.println(color.toString() + " is at " + x + ", " + y);
+		
 		spots.add(new Spot(x,y));
 		synchronized(spots){
 			lastDirection = facing;
@@ -119,7 +120,6 @@ public class Line implements Serializable{
 		}
 		
 	}
-	
 	
 }
 

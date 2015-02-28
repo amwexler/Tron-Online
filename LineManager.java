@@ -25,7 +25,7 @@ public class LineManager{
 	int numLines;
 	ArrayList<Line> lines;
 	boolean[] lose = {false,false,false,false};
-	boolean[] localPlayers = {true,true,false,false};
+	boolean[] localPlayers = {true,true,true,true};
  	//Line line1, line2;
 
 	private static LineManager instance = null;
@@ -239,6 +239,12 @@ public class LineManager{
 			return lines.get(i);
 		}
 		return null;
+	}
+	
+	public void setLocalPlayers(int numLocalPlayers){//only meant for a local game
+		for(int i = 0; i < numLocalPlayers; i++){
+			localPlayers[i]=true;
+		}
 	}
 	
 	
